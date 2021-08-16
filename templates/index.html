@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SB Web Tech - NLP Task</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.0/css/all.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+	<link rel="stylesheet" href="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-addons-4.19.1.min.css">
+	<link rel="stylesheet" type="text/css" href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/mdb-plugins-gathered.min.css">
+</head>
+	<body>
+      <!-- Default form subscription -->
+      <div class="container">
+		<form method ="post" class="text-center border border-light p-5" action="{{ url_for('search',search_param=search_param) }}">
+
+		    <p class="h4 mb-4">SB Web Tech - NLP Task</p>
+
+		    
+		  
+		    <!-- Name -->
+		  <textarea name="search_param" id="search_param" rows="1" class="form-control sm-4" placeholder="Enter keyword or passphrase to begin generation"></textarea>
+
+		   <br><br>
+		    <!-- Sign in button -->
+		    <button class="btn btn-info btn-sm" type="submit">Generate</button>
+
+
+		</form>
+
+		
+		<form class="text-center border border-light p-1" action="explore_extracted">
+
+		    <p class="h4 mb-4">Would you like to view the extracted data</p>
+		    <p class="h7 mb-7">The data extraction is done using https://mediastack.com/ and currently extracted data resembles around 5600 english news articles related to technology(see image below for parameter config)</p>
+		   
+		    <button class="btn btn-info btn-sm" type="submit">Show me the extracted data</button>
+
+
+		</form>
+
+		<form class="text-center border border-light p-5" action="extract">
+
+		    <p class="h7 mb-7">You can also extract data on your own. But the limited version on the extraction tool only allows 500 requests per month which might be over soon. You can upgrade your own api key and request results for different categories. Please make sure you make changes to the "categories" parameter in data_extractor.py as shown in image below. The other available parameters are: general, business, entertainment, health, science, sports, technology</p>
+		    <p class="h7 mb-7">The data extraction will take some time. Please check your log for details</p>
+
+		   <img src="{{url_for('static', filename='image1.jpg')}}" align="middle" width="300" />
+
+		   <br><br>
+		   
+		    <button class="btn btn-info btn-sm" type="submit">Extract data and show me</button>
+
+
+		</form>
+
+		<form class="text-center border border-light p-5" action="classifier_json">
+
+		    <p class="h7 mb-7">The extracted datas are passed to a news classifer. The classifier is built with 44,898 labelled news articles. You can find the classifier in Fake news model.ipynb file</p>
+		   
+		    <button class="btn btn-info btn-sm" type="submit">Show me the classified data in json</button>
+
+
+		</form>
+
+		<form class="text-center border border-light p-5" action="classifier_table">
+
+		<button class="btn btn-info btn-sm" type="submit">Show me the classified data in table</button>
+		
+		</form>
+
+		</div>
+		<!-- Default form subscription -->
+		<script type="text/javascript" src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.1/js/popper.min.js"></script>
+		<script type="text/javascript" src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.19.1/js/mdb.min.js"></script>
+		<script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/bundles/4.19.1/compiled-addons.min.js"></script>
+		<script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/plugins/mdb-plugins-gathered.min.js"></script>
+	</body>
+</html>
