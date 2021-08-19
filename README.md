@@ -18,4 +18,9 @@ Follow these steps:
   ```
   python3 test.py
   ```
+  
+### Probable papers
+
+https://arxiv.org/pdf/1704.06851.pdf (Affect-LM: A Neural Language Model for Customizable Affective Text Generation)
+
 
