@@ -22,5 +22,12 @@ Follow these steps:
 ### Probable papers
 
 https://arxiv.org/pdf/1704.06851.pdf (Affect-LM: A Neural Language Model for Customizable Affective Text Generation)
+https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf (Language Models are Unsupervised Multitask Learners)
+https://arxiv.org/abs/1706.03762 (Attention is all you need)
+https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf (Improving Language Understanding by Generative Pre-Training) (GPT-1)
+https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf (Language Models are Unsupervised Multitask Learners) (GPT-2)
+https://arxiv.org/pdf/2005.14165.pdf (Language Models are Few-Shot Learners) (GPT-3)
+
+
 
 
