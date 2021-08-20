@@ -34,5 +34,6 @@ https://cdn.openai.com/better-language-models/language_models_are_unsupervised_m
 https://arxiv.org/pdf/2005.14165.pdf (Language Models are Few-Shot Learners) (GPT-3)
 
 
+### Relevant Links
 
-
+https://medium.com/walmartglobaltech/the-journey-of-open-ai-gpt-models-32d95b7b7fb2 (Summarization of GPT models)
